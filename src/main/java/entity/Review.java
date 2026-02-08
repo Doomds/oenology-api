@@ -16,7 +16,7 @@ public class Review {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id")
-    private Vin wineId;
+    private Wine wineId;
 
     @Column(name = "cote")
     private int quotation;
@@ -36,11 +36,11 @@ public class Review {
         this.oenologistId = oenologistId;
     }
 
-    public Vin getWineId() {
+    public Wine getWineId() {
         return wineId;
     }
 
-    public void setWineId(Vin wineId) {
+    public void setWineId(Wine wineId) {
         this.wineId = wineId;
     }
 
